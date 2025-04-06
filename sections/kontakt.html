@@ -1,14 +1,23 @@
-<div>
-    <h3> {section.title} </h3>
-    <p> {section.content} </p>
+<div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
+    <h3 style="text-align: center; color: #333;">{section.title}</h3>
+    <p style="text-align: center; color: #666;">{section.content}</p>
 
-    <label for="">Name</label>
-    <input type="text" name="name" id="name">
+    <form style="display: flex; flex-direction: column; gap: 15px;">
+        <div>
+            <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Name</label>
+            <input type="text" name="name" id="name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
 
-    <label for="">Email</label>
-    <input type="email" name="email" id="email">
-   
-    <label for="">Nachricht</label>
-    <input type="text" name="nachricht" id="nachricht">
+        <div>
+            <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Email</label>
+            <input type="email" name="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
 
+        <div>
+            <label for="nachricht" style="display: block; font-weight: bold; margin-bottom: 5px;">Nachricht</label>
+            <textarea name="nachricht" id="nachricht" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        </div>
+
+        <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">Senden</button>
+    </form>
 </div>

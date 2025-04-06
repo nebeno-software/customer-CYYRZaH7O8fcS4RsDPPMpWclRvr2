@@ -1,4 +1,44 @@
-<div>
+<div class="angebot-section">
     <h3> {section.title} </h3>
-    <div> {section.images} </div>
+    <div class="angebot-images">
+        {section.images}
+    </div>
 </div>
+
+<style>
+    .angebot-section {
+        text-align: center;
+        margin: 20px;
+    }
+    .angebot-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .angebot-images img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .angebot-images img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    .angebot-images img:active {
+        transform: scale(1);
+        transition: transform 0.1s ease;
+    }
+    .angebot-images img:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.5);
+    }
+    .angebot-images img:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.5);
+    }
+    .angebot-images img:focus:not(:focus-visible) {
+        box-shadow: none;
+    }
+</style>
