@@ -42,7 +42,21 @@
         <button type="submit" class="form-button">Senden</button>
     </form>
 </div>
-<div class="portfolio-section">
+
+
+<script> 
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const nachricht = document.getElementById('nachricht').value;
+
+        const recipientEmail = "jakob@rinke-online.de"; // Replace with the actual recipient email address
+        const mailtoLink = `mailto:${recipientEmail}?subject=Kontaktanfrage von ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ANachricht:%0A${encodeURIComponent(nachricht)}`;
+        window.location.href = mailtoLink;
+    });
+</script><div class="portfolio-section">
     <h3> portfolio </h3>
     <div class="portfolio-images">
         <img src="images/67f2c94ead9850.78859863.png" alt="Mein Bild 1"><img src="images/67f2c951dc2332.91263987.png" alt="Mein Bild 2">
