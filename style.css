@@ -3,48 +3,59 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: #f4f6f9;
     color: #343a40;
     min-height: 100vh;
 }
+
 header {
     background: linear-gradient(90deg, #6a11cb, #2575fc);
     color: white;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 1px;
 }
+
 main {
-    padding: 2rem;
-    max-width: 900px;
+    padding: 3rem 1rem;
+    max-width: 1200px;
     margin: 0 auto;
 }
+
 section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
+
 footer {
     background: #343a40;
     color: white;
-    padding: 1.5rem 0.5rem;
-    margin-top: 2rem;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    text-align: center;
 }
+
 footer img {
-    max-width: 30px;
-    margin: 0 auto;
+    max-width: 40px;
+    margin: 0 auto 10px;
     display: block;
 }
+
 footer div a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #ffffff;
     text-decoration: none;
 }
+
 footer div a:hover {
     color: #d1e7ff;
 }
@@ -53,56 +64,45 @@ a {
     color: #2575fc;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 .portfolio-section, .angebot-section {
     text-align: center;
-    margin: 30px auto;
-    padding: 25px;
+    margin: 40px auto;
+    padding: 30px;
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
 }
+
 .portfolio-section h2, .angebot-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #343a40;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
+
 .portfolio-images, .angebot-images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
+
 .portfolio-images img, .angebot-images img {
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .portfolio-images img:hover, .angebot-images img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-.portfolio-caption, .angebot-caption {
-    font-size: 0.9rem;
-    color: #6c757d;
-    margin-top: 10px;
-    text-align: center;
-}
-.about-section {
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    margin: 30px auto;
-    text-align: center;
-}
-.about-title {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     font-size: 1.8rem;
     color: #343a40;
     margin-bottom: 15px;
