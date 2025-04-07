@@ -1,23 +1,23 @@
-<div style="max-width: 600px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-    <h3 style="text-align: center; color: #333;">{section.title}</h3>
-    <p style="text-align: center; color: #666;">{section.content}</p>
+<div class="contact-form-container">
+    <h3 class="contact-form-title">{section.title}</h3>
+    <p class="contact-form-content">{section.content}</p>
 
-    <form style="display: flex; flex-direction: column; gap: 15px;">
-        <div>
-            <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px;">Name</label>
-            <input type="text" name="name" id="name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name="name" id="name" class="form-input">
         </div>
 
-        <div>
-            <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px;">Email</label>
-            <input type="email" name="email" id="email" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" class="form-input">
         </div>
 
-        <div>
-            <label for="nachricht" style="display: block; font-weight: bold; margin-bottom: 5px;">Nachricht</label>
-            <textarea name="nachricht" id="nachricht" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        <div class="form-group">
+            <label for="nachricht" class="form-label">Nachricht</label>
+            <textarea name="nachricht" id="nachricht" rows="5" class="form-textarea"></textarea>
         </div>
 
-        <button type="submit" style="padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">Senden</button>
+        <button type="submit" class="form-button">Senden</button>
     </form>
 </div>
